@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Login User
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "members/login.css" %}">
+{% endblock %}
+
+{% block content %}
+    {% if error_massage %}
+        <section id="alert" role="alert">
+        	<div>
+                <h2>User has not found!</h2>
+                <p>Have you ever register?</p>
+            </div>
+        </section>
+    {% endif %}
+
+    <section id="login-form">
+        <h2>Log in</h2>
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            {% for form in login_form %}
+                <div class="form-control {% if form.errors%}errors{% endif %}">
+                    {{ form.label_tag }}
+                    {{ form }}
+                    {{ form.errors }}
+                </div>
+            {% endfor %}
+
+            <div class="button-form">
+                <button>Log In</button>
+            </div>
+        </form>
+    </section>
+{% endblock %}

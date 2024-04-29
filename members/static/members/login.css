@@ -1,0 +1,98 @@
+body {
+    background-color: #e7e7e7;
+  }
+
+  #main-navigation {
+    background-color: #390281;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+
+#login-form {
+    width: 90%;
+    max-width: 30rem;
+    margin: 8rem auto 3rem auto;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 1rem;
+    /*position: relative;*/
+  }
+
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-control label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-control input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0.25rem;
+    border-radius: 6px;
+    font: inherit;
+}
+
+#login-form button{
+    font: inherit;
+    background-color: #390281;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+}
+
+
+.button-form{
+    /*margin: 0;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+#login-form button:hover,
+#login-form button:active{
+    background-color: #5706c0;
+    cursor: pointer;
+
+}
+
+#login-form h2{
+    text-align: center;
+}
+
+.errors ul{
+    list-style: none;
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #680000;
+}
+
+.errors label{
+    color: #680000;
+}
+
+.errors input{
+    background-color: #fde3e3;
+    border-color: #680000;
+}
+
+#alert {
+    margin: 8rem auto 3rem auto;
+    width: 90%;
+    max-width: 50rem;
+    border: 2px solid #680000;
+    background-color: #fde3e3;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+#alert h2, p{
+    color: #680000;
+}
